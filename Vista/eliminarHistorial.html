@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="..\Estilos\buscar.css">
+  <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+  <title>Formulario Registro</title>
+</head>
+<body>
+  <section class="form-register">
+	<h4>Formulario Modificar Historial</h4>
+    <input class="controls" type="text" name="nombres" id="numeroParametro" placeholder="Ingrese el Numero Historia">
+	<input class="controls" type="text" name="nombres" id="numeroHistoria">
+    <input class="controls" type="text" name="nombres" id="nombreMedico" >
+    <input class="controls" type="text" name="correo" id="documentoHistorial" >
+	<input class="controls" type="text" name="correo" id="codigoEnfermedadH" >
+	
+    <input class="botons" type="submit" onclick="buscarHistorial()"  id = "buscarH" value="Buscar">
+    <input class="botons2" type="submit"  onclick="eliminarHistorial()"  id = "eliminarH" value="Eliminar">
+   
+  </section>
+
+  <script src = "..\servicios\eliminarHistorial.js"></script>
+  
+</body>
+</html>

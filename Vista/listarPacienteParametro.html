@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+    <title>FETCH</title>
+</head>
+        <body>
+<div class = "container">
+    
+    <input class="controls" type="text" name="nombres" id="nombreParametro" placeholder="Ingrese el  nombre">
+    <input class="controls" type="text" name="nombres" id="generoParametro" placeholder="Ingrese el  genero">
+    <input class="botons" type="submit"  id = "listar"  onclick="listarParametro()" value="Listar">
+        <div class = " row mt -3">
+        <div class = "col"> 
+                <h2> Listada De Datos</h2>
+                <div class = "my-3">
+                        <table class = "table" id = "lista-pacientesParametro">
+                                <thead>
+                                        <tr>
+                                             <th scope="col"> ID</th>
+                                             <th scope="col"> Documento</th>
+                                             <th scope = "col">Nombre</th>
+                                             <th scope="col"> Correo</th>
+                                             <th scope = "col">Telefono</th>
+                                             <th scope = "col">Genero</th>
+                                            
+                                        </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                        </table>
+                </div>
+                </div>
+
+        </div>
+
+</div>
+<script src = "..\servicios\listarPacienteParametro.js"></script>
+
+</body>
+</html>

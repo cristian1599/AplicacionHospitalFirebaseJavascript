@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+</head>
+  <link rel="stylesheet" href="..\Estilos\agregas.css">
+  <title>Formulario Registro</title>
+</head>
+<body>
+  <section class="form-register">
+	<h4>Formulario Agregar Paciente</h4>
+
+	<input class="controls" type="text" name="nombres" id="documentoP" placeholder="Ingrese el  documento">
+    <input class="controls" type="text" name="nombres" id="nombreP" placeholder="Ingrese el Nombre">
+    <input class="controls" type="text" name="correo" id="correoP" placeholder="Ingrese el Correo">
+	<input class="controls" type="text" name="correo" id="telefonoP" placeholder="Ingrese el telefono">
+	<input class="controls" type="text" name="apellidos" id="generoP" placeholder="Ingrese el genero">
+ 
+    <input class="botons" type="submit"  id = "saved" onclick="agregarPaciente()" value="Registrar">
+   
+  </section>
+
+  <script src = "..\servicios\agregarPaciente.js"></script>
+</body>
+</html>

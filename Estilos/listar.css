@@ -1,0 +1,53 @@
+.controls {
+	width: 25%;
+	
+	padding: 2px;
+    border-radius: 4px;
+    left : 3px;
+    position: relative;
+	margin-bottom: 16px;
+	border: 1px solid #1f53c5;
+	font-family: 'calibri';
+	font-size: 18px;
+	
+  }
+
+  .controls2 {
+	width: 25%;
+	
+    padding: 2px;
+    position: relative;
+    top: 40px;
+    right: 25%;
+	border-radius: 4px;
+	margin-bottom: 16px;
+	border: 1px solid #1f53c5;
+	font-family: 'calibri';
+	font-size: 18px;
+
+  }
+ 
+  .my-3{
+  
+  }
+
+  .botons1{
+    width: 80px;
+    position: relative;
+    right: 25%;
+  }
+  .row mt-3{
+    position: relative;
+    top : 40px; 
+  }
+  .table{
+      width: 150%;
+  }
+
+  .botons2{
+    width: 80px;
+    position: relative;
+    right: 32.5%;
+    top: 40px;
+  }
+  

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="..\Estilos\listar.css">
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+
+    
+</head>
+        <body>
+<div class = "container">
+  
+    <input class="controls" type="text" name="nombres" id="nombreDoctor" placeholder="Ingrese el nombre del doctor">
+    <input class="controls2" type="text" name="nombres2" id="codifoEnfermedadP" placeholder="Ingrese el codigo de la enfermedad">
+    <input class="botons1" type="submit" onclick="listarParametroDoctor()" id = "listarH" value="Listar">
+    <input class="botons2" type="submit" onclick="listarParametroCodigo()" id = "listarCodigo" value="Listar">
+        <div class = " row mt-3">
+        <div class = " row mt-3">
+        <div class = "col"> 
+                
+                <div class = "my-3">
+                        <table class = "table" id = "lista-HistorialParametro">
+                                <thead>
+                                        <tr>
+                                             <th scope="col"> ID</th>
+                                             <th scope="col"> Numero Historia</th>
+                                             <th scope = "col">Nombre Doctor</th>
+                                             <th scope="col"> Documento Paciente</th>
+                                             <th scope = "col">Codigo Enfermedad</th>
+                                            
+                                            
+                                        </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                        </table>
+                </div>
+                </div>
+
+        </div>
+
+</div>
+<script src = "..\servicios\listarHistorialParametro.js"></script>
+
+</body>
+</html>

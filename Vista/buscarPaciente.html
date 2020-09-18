@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="..\Estilos\buscarPaciente.css">
+  <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+  <title>Formulario Registro</title>
+</head>
+<body>
+  <section class="form-register">
+	<h4>Formulario Registro</h4>
+    <input class="controls" type="text" name="nombres" id="documentoParametro" placeholder="Ingrese el  documento">
+	<input class="controls" type="text" name="nombres" id="documentoBuscarP">
+    <input class="controls" type="text" name="nombres" id="nombreBuscarP" >
+    <input class="controls" type="text" name="correo" id="correoBuscarP" >
+	<input class="controls" type="text" name="correo" id="telefonoBuscarP" >
+	<input class="controls" type="text" name="apellidos" id="generobuscarP" >
+    <input class="botons" type="submit"  id = "buscar" onclick= "buscarPaciente()" value="Buscar">
+    <input class="botons2" type="submit"  id = "modificar" onclick = "modificarPaciente()" value="Modificar">
+
+  </section>
+
+  <script src = "..\servicios\buscarPaciente.js"></script>
+  
+</body>
+</html>
